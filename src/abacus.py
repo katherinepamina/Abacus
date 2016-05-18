@@ -65,9 +65,9 @@ while(True):
 
     # These are the columns of the abacus
     # cv2.rectangle(frame, (90, 80), (90+width, 500),(0, 255, 0), 3)
-    for i in range(0,1): # Traditionally 13
+    for i in range(0,13): # Traditionally 13
         cv2.rectangle(gray, (90 + i*width, 80), (90 + (i+1)*width, bottom_frame), (0, 255, 0), 3)
-        for j in range(0,1): # Traditionally 5
+        for j in range(0,5): # Traditionally 5
             gray_sum = 0
             x_min = 90 + i*width
             x_max = 90 + (i+1)*width
