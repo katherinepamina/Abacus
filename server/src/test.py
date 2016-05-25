@@ -28,8 +28,6 @@ pusher_client = pusher.Pusher(
   ssl=True
 )
 
-temp_sum = 0
 while(True):
-    temp_sum += 1
-    sum = temp_sum
+    sum = 0
     pusher_client.trigger('abacus_channel', 'updated', sum)
