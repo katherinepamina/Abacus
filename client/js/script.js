@@ -23,9 +23,10 @@ abacus.controller('HomeCtrl', function ($scope, $pusher, $http) {
   valToIndex[$scope.two] = $scope.two;
 
   channel.bind('updated', function(data) {
-    $scope.number = data;
-    if ($scope.number in valToIndex) {
-      found[$scope.number] = $scope.number;
+    var number = data
+    $scope.number = number;
+    if (number in valToIndex) {
+      foundMap[number] = number;
     }
   });
 
