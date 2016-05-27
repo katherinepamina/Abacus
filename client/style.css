@@ -1,7 +1,49 @@
+body {
+	background: url("img/closed.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 50%;
+}
+
 .col {
 	text-align: center;
 }
 
 .green {
 	color: green;
+}
+
+.title {
+    text-align: center;
+}
+
+.code {
+	border-style: solid;
+	margin-top: 20px;
+}
+
+.number {
+	font-size: 25px;
+	visibility: hidden;
+	position: relative;
+	top: 0px;
+	left: 0px !important;
+}
+
+#number_rep {
+	margin-top: 40px;
+	color: blue;
+}
+
+#footer {
+	display: inline-block;
+	margin-top: 300px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.guess {
+	display: inline-block;
+	margin-right: 15px;
 }

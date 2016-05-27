@@ -1,14 +1,23 @@
 <div>
-	<h1>{{number}}</h1>
+	<!-- <h1 class="title">GeoAbaDude</h1> -->
+	<h1 class="title">Crack the Emperor's Code!</h1>
 	<div class="row">
-		<div class="col-xs-3 col"></div>
-		<div class="col-xs-3 col"><h2>5</h2></div>
-		<div class="col-xs-3 col"><h2>7</h2></div>
+		<div class="col-xs-2 col"></div>
+		<div class="col-xs-2 col code" id = "number_1"><p class = "number">{{one}}</p><h2>五</h2></div>
+		<div class="col-xs-2 col code" id = "number_2"><p class = "number">{{two}}</p><h2>六十</h2></div>
+		<div class="col-xs-2 col code" id = "number_3"><p class = "number">{{three}}</p><h2>十六</h2></div>
+		<div class="col-xs-2 col code" id = "number_4"><p class = "number">{{four}}</p><h2>七千九百二十</h2></div>
 	</div>
-	<div class="row green">
-		<div class="col-xs-3 col"></div>
-		<div class="col-xs-3 col" ng-if="found(one)"><h2>{{one}}</h2></div>
-		<div class="col-xs-3 col" ng-if="found(two) && !found(one)"></div>
-		<div class="col-xs-3 col" ng-if="found(two)"><h2>{{two}}</h2></div>
-	</div>
+	<h1 class = "title" id = "number_rep">{{number}}</h1>
+	<h3 id="footer">Possible Numbers: </h3>
+	<h3 class="guess" id="4">4</h3>
+	<h3 class="guess" id="69">69</h3>
+	<h3 class="guess" id="60">60</h3>
+	<h3 class="guess" id="5">5</h3>
+	<h3 class="guess" id="7">7</h3>
+	<h3 class="guess" id="42">42</h3>
+	<h3 class="guess" id="16">16</h3>
+	<h3 class="guess" id="35">35</h3>
+	<h3 class="guess" id="6535">6535</h3>
+	<h3 class="guess" id="7920">7920</h3>
 </div>
